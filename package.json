@@ -19,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2/issues"
   },
-  "homepage": "https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2#readme"
+  "homepage": "https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2#readme",
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
 }
