@@ -1,6 +1,7 @@
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'developmnet';
@@ -29,9 +30,32 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'components','index.html'),
     }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash:8].css',
+    }),
   ],
   module: {
     rules: [
+      {
+        test: /\.(c|sc|sa)ss$/i,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'resolve-url-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: path.resolve(__dirname, 'src', 'scss', 'library.scss'),
+            }
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+        ],
+      },
       {
         test: /\.svg$/, //TODO check the .ico files!
         use: [
