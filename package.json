@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2#readme",
   "devDependencies": {
+    "image-webpack-loader": "^8.1.0",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2",
     "webpack": "^5.88.2",
