@@ -1,5 +1,6 @@
 const path = require('path');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'developmnet';
@@ -25,7 +26,9 @@ module.exports = {
     host: 'localhost',
   },
   plugins: [
-
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, 'src', 'components','index.html'),
+    }),
   ],
   module: {
     rules: [
