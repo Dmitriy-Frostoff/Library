@@ -1,5 +1,4 @@
 const path = require('path');
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -13,25 +12,25 @@ module.exports = {
   target,
   devtool,
   entry: [
-    path.resolve(__dirname, 'src', 'components', 'index.js'),
+    path.resolve(__dirname, 'library', 'src', 'components', 'index.js'),
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: '[name].[contenthash: 8].js',
+    filename: '[name].[contenthash:4].js',
     assetModuleFilename: 'assets/[name][ext]',
   },
   devServer: {
-    port: 3000,
-    open: true,
+    port: 8080,
     host: 'localhost',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'src', 'components','index.html'),
+      template: path.resolve(__dirname, 'library', 'src', 'components','index.html'),
+      inject: 'head',
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash:8].css',
+      filename: '[name].[contenthash:4].css',
     }),
   ],
   module: {
@@ -47,21 +46,22 @@ module.exports = {
           'css-loader',
           'resolve-url-loader',
           {
-            loader: 'sass-resources-loader',
+            loader: 'sass-loader',
             options: {
-              resources: path.resolve(__dirname, 'src', 'scss', 'library.scss'),
-            }
-        },
-        {
-          loader: 'sass-loader',
-          options: {
-            sourceMap: true,
+              sourceMap: true,
+            },
           },
-        },
         ],
       },
       {
-        test: /\.svg$/, //TODO check the .ico files!
+        test: /\.ico/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'assets/icons/[name][ext]',
+        }
+      },
+      {
+        test: /\.svg$/,
         use: [
           {
             loader: 'image-webpack-loader',

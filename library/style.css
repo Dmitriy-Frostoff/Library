@@ -1032,7 +1032,7 @@ img {
   justify-content: center;
   margin: 0 auto;
   padding-top: 62px;
-  background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%), url("./src/assets/background/welcome/welcome__background.jpg");
+  background-image: linear-gradient(180deg, #0C0C0E 0%, #0C0C0E 0.01%, rgba(18, 18, 21, 0.1) 100%), url("../../../assets/background/welcome/welcome__background.jpg");
   background-position: top, center;
   background-size: auto, cover;
   background-repeat: no-repeat, no-repeat;
