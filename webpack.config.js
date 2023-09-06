@@ -15,10 +15,30 @@ module.exports = {
     path.resolve(__dirname, 'library', 'src', 'components', 'index.js'),
   ],
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'library', 'dist'),
     clean: true,
     filename: '[name].[contenthash:4].js',
-    assetModuleFilename: 'assets/[name][ext]',
+    // assetModuleFilename: 'assets/[name][ext]',
+    publicPath: '',
+    assetModuleFilename: (pathData) => {
+      // pathData is object
+      const filepathStartIndex = path
+        // path is object 
+        // path.dirname('folder1/folder2/image.png') => folder1/folder2;
+        .dirname(pathData.filename)
+        // path.posix.sep === separator for path parts in current system
+        .split(`${path.posix.sep}`)
+        // desired folder for path start
+        .indexOf('src');
+        
+        const filepath = path
+        // pathData.filename is current full path from webpack.config.js
+        .dirname(pathData.filename)
+        .split(`${path.posix.sep}`)
+        .slice(filepathStartIndex)
+        .join(`${path.posix.sep}`);
+      return `${filepath}${path.posix.sep}[name].[hash][ext][query]`;
+    },
   },
   devServer: {
     port: 8080,
@@ -54,13 +74,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.ico/,
-        type: 'asset/resource',
-        generator: {
-          filename: 'assets/icons/[name][ext]',
-        }
-      },
-      {
         test: /\.svg$/,
         use: [
           {
@@ -88,9 +101,6 @@ module.exports = {
           }
         ],
         type: 'asset/resource',
-        generator: {
-          filename: 'assets/svg/[name][ext]',
-        }
       },
       {
         test: /\.(jpe?g|png|gif)$/,
@@ -120,9 +130,6 @@ module.exports = {
           }
         ],
         type: 'asset/resource',
-        generator: {
-          filename: 'assets/img/[name][ext]',
-        }
       },
     ]
   }
