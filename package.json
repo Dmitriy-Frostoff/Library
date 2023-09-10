@@ -4,9 +4,9 @@
   "description": "Library is a stage #0 task in the course of which you will make the landing page of the site for the selection and sale of books, make it adaptive and interactive.",
   "main": "index.js",
   "scripts": {
-    "bundleHTMLandDevBuild": "gulp html && webpack",
-    "bundleHTML": "gulp html",
-    "start": "webpack serve",
+    "bundleHTMLandDevBuild": "gulp html && webpack --progress",
+    "bundleHTML": "gulp html --progress",
+    "start": "webpack serve --progress",
     "dev": "webpack --progress",
     "prod": "webpack --node-env=production --progress",
     "style": "sass --watch ./library/src/components/library.scss:./library/dist/style.css"
