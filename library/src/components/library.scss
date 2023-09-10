@@ -20,14 +20,14 @@
 @import "./base/buttons";
 @import "./base/check-form";
 @import "./base/social";
-@import "./base/burger-menu";
+@import "./base/burger-menu/burger-menu";
 
 //components
-@import "./components/header";
-@import "./components/welcome";
-@import "./components/about";
-@import "./components/favorites";
-@import "./components/coffee-shop";
-@import "./components/contacts";
-@import "./components/library-card";
-@import "./components/footer";
+@import "./components/header/header";
+@import "./components/welcome/welcome";
+@import "./components/about/about";
+@import "./components/favorities/favorites";
+@import "./components/coffee-shop/coffee-shop";
+@import "./components/contacts/contacts";
+@import "./components/library-card/library-card";
+@import "./components/footer/footer";
