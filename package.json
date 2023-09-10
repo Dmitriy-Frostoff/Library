@@ -7,9 +7,9 @@
     "bundleHTMLandDevBuild": "gulp html && webpack",
     "bundleHTML": "gulp html",
     "start": "webpack serve",
-    "dev": "webpack",
-    "prod": "webpack --node-env=production",
-    "style": "sass --watch ./library/src/components/library.scss:./library/style.css"
+    "dev": "webpack --progress",
+    "prod": "webpack --node-env=production --progress",
+    "style": "sass --watch ./library/src/components/library.scss:./library/dist/style.css"
   },
   "repository": {
     "type": "git",

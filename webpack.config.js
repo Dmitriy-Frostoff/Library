@@ -32,11 +32,12 @@ module.exports = {
         .indexOf('src');
         
         const filepath = path
-        // pathData.filename is current full path from webpack.config.js
-        .dirname(pathData.filename)
-        .split(`${path.posix.sep}`)
-        .slice(filepathStartIndex)
-        .join(`${path.posix.sep}`);
+          // pathData.filename is current full path from webpack.config.js
+          .dirname(pathData.filename)
+          // path.posix.sep === / in windows
+          .split(`${path.posix.sep}`)
+          .slice(filepathStartIndex)
+          .join(`${path.posix.sep}`);
       return `${filepath}${path.posix.sep}[name].[hash][ext][query]`;
     },
   },
