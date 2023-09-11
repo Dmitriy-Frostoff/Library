@@ -1,4 +1,4 @@
-.pagination__container {
+.carousel__container {
   // Position
 
   // block-model
@@ -15,13 +15,14 @@
 
 }
 
-.pagination__content {
+.carousel__wrapper {
   // Position
 
   // block-model
-  gap: 25px;
-  padding-bottom: 15px;
-  justify-content: center;
+  width: 100%;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
   // Typography
 
   // Decoration
@@ -29,6 +30,70 @@
   // Animation
 
   // Various
+
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+    
+  }
+}
+
+.carousel__content-wrapper {
+  // Position
+
+  // block-model
+  max-width: 1400px;
+  row-gap: 35px;
+  overflow: hidden;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    max-width: 450px;
+    // Typography
+
+    // Decoration
+    transform: translateX(0);
+    // Animation
+
+    // Various
+    
+  }
+}
+
+.carousel__content {
+  // Position
+
+  // block-model
+  gap: 25px;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  // Typography
+
+  // Decoration
+  transform: translateX(0);
+  // Animation
+
+  // Various
+
   @include media-tablet-large {
     // Position
 
@@ -42,13 +107,10 @@
 
     // Various
 
-    & > :nth-child(3),  & > :nth-child(4) {
-      display: none;
-    }
   }
 }
 
-.pagination__content-icon {
+.carousel__content-icon {
   // Position
 
   // block-model
@@ -67,7 +129,6 @@
     // block-model
     display: flex;
     justify-content: center;
-    margin-top: 20px;
     padding: 17px;
     // Typography
 
@@ -79,7 +140,7 @@
   }
 }
 
-.pagination__content-icon_position {
+.carousel__content-icon_position {
   // Position
 
   // block-model
@@ -106,7 +167,7 @@
   }
 }
 
-.pagination__slider-arrow {
+.carousel__slider-arrow {
   // Position
 
   // block-model
@@ -125,11 +186,11 @@
   }
 }
 
-.pagination__image {
+.carousel__image {
   // Position
 
   // block-model
-
+  width: calc(450px / $content-width-desktop * 100%);
   // Typography
 
   // Decoration
@@ -137,15 +198,29 @@
   // Animation
 
   // Various
+  
+  @include media-tablet-large {
+    // Position
 
+    // block-model
+    width: initial;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
 }
 
-.pagination__buttons-container {
+.carousel__buttons-container {
   // Position
 
   // block-model
   // width: 78px;
   height: 26px;
+  align-self: center;
   // Typography
 
   // Decoration
@@ -164,7 +239,7 @@
   }
 }
 
-.pagination__button {
+.carousel__button {
   // Position
 
   // block-model
@@ -183,7 +258,7 @@
   
 }
 
-.pagination__button_active {
+.carousel__button_active {
   // Position
 
   // block-model
@@ -198,7 +273,7 @@
 
 }
 
-.pagination__button-inner {
+.carousel__button-inner {
   // Position
 
   // block-model
@@ -219,7 +294,7 @@
   }
 }
 
-.pagination__button-inner_active {
+.carousel__button-inner_active {
   // Position
 
   // block-model
