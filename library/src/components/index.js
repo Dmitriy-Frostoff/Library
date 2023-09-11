@@ -7,5 +7,7 @@ import './library.scss';
 import { librarySelfCheckPart3 } from './librarySelfCheck/librarySelfCheck-part3/librarySelfCheckPart3';
 
 import { burgerMenu } from './base/burger-menu/burgerMenu';
+import { carouselHandler } from './base/carousel/_carousel';
 
 burgerMenu();
+carouselHandler();

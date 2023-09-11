@@ -60,6 +60,7 @@
   // Decoration
 
   // Animation
+  @extend %transition-basic;
 
   // Various
 
@@ -71,9 +72,9 @@
     // Typography
 
     // Decoration
-    transform: translateX(0);
-    // Animation
 
+    // Animation
+    @extend %transition-basic;
     // Various
     
   }
@@ -91,6 +92,7 @@
   // Decoration
   transform: translateX(0);
   // Animation
+  @extend %transition-basic;
 
   // Various
 
@@ -308,4 +310,21 @@
 
   // Various
 
+}
+
+.carousel__content-icon_disabled {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  @extend %pointer-events-disable;
+  // Animation
+
+  // Various
+  svg > path {
+    stroke: $color-modal;
+  }
 }
