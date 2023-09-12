@@ -10,7 +10,7 @@ export function html() {
       prefix: '@@',
       indent: true,
     }))
-    .pipe(replace(/="(\.\.\/){3}/gi, '="../'))
+    .pipe(replace(/="(\.\.\/){3,}/gi, '="../'))
     .pipe(rename('index.html'))
     .pipe(dest('./library/src/components/'));
 }
