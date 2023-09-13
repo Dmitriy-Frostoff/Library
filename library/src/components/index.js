@@ -8,6 +8,8 @@ import { librarySelfCheckPart3 } from './librarySelfCheck/librarySelfCheck-part3
 
 import { burgerMenu } from './base/burger-menu/burgerMenu';
 import { carouselHandler } from './base/carousel/_carousel';
+import { sliderHandler } from './base/favorities-slider/_favoritiesSlider';
 
 burgerMenu();
 carouselHandler();
+sliderHandler();

@@ -38,7 +38,7 @@ module.exports = {
           .split(`${path.posix.sep}`)
           .slice(filepathStartIndex)
           .join(`${path.posix.sep}`);
-      return `${filepath}${path.posix.sep}[name].[hash][ext][query]`;
+      return `${filepath}${path.posix.sep}[name].[hash:4][ext][query]`;
     },
   },
   devServer: {

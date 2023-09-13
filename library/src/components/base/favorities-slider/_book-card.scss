@@ -7,9 +7,9 @@
   // Typography
 
   // Decoration
-
+  opacity: 1;
   // Animation
-
+  @extend %transition-basic;
   // Various
 }
 
@@ -103,5 +103,20 @@
 
   // Animation
 
+  // Various
+}
+
+// modificators
+.book__container_invisible {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+  opacity: 0;
+  // Animation
+  @extend %transition-basic;
   // Various
 }
