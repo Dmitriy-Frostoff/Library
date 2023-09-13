@@ -31,15 +31,26 @@
   // Position
 
   // block-model
-  column-gap: 220px;
-  justify-content: center;
   row-gap: 40px;
   // Typography
-
-  // Decoration
-
-  // Animation
-
-  // Various
   
+  // Decoration
+  
+  // Animation
+  
+  // Various
+
+  @include media-tablet-large {
+    // Position
+    
+    // block-model
+    justify-content: center;
+    // Typography
+    
+    // Decoration
+    
+    // Animation
+    
+    // Various
+  }
 }
