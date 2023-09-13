@@ -1,6 +1,6 @@
 .favorites__checker-container {
   // Position
-
+  position: relative;
   // block-model
   width: 100%;
   row-gap: 35px;
@@ -11,6 +11,38 @@
   // Animation
 
   // Various
+}
+
+.favorites__checker-container-sticky {
+  // Position
+
+  // block-model
+  padding-top: 40px;
+  width: 100%;
+  row-gap: 35px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+  @include media-tablet-large {
+    // Position
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    // block-model
+
+    // Typography
+
+    // Decoration
+    background-color: $color-light;
+    // Animation
+
+    // Various
+  }
 }
 
 .favorites__checker-radio-container {
