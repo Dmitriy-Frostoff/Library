@@ -1,0 +1,29 @@
+.header__container {
+  // Position
+
+  // block-model
+  align-items: center;
+  width: 100%;
+  padding: $padding-content-desktop;
+  // Typography
+
+  // Decoration
+  background-color: $color-background-dark;
+  // Animation
+
+  // Various
+
+  @include media-tablet-large {
+     // Position
+    position: relative;
+    // block-model
+
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}

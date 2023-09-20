@@ -1,0 +1,215 @@
+.coffee-shop {
+  // Position
+
+  // block-model
+  width: 100%;
+  padding: 20px 0 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__container {
+  // Position
+
+  // block-model
+  row-gap: 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__description {
+  // Position
+
+  // block-model
+
+  // Typography
+  text-align: center;
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__menu-container {
+  // Position
+
+  // block-model
+  width: 100%;
+  row-gap: 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  
+}
+
+.coffee-shop__menu {
+  // Position
+
+  // block-model
+  row-gap: 40px;
+  column-gap: 60px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__menu_left {
+  // Position
+
+  // block-model
+  align-items: flex-start;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    min-width: 438px;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
+.coffee-shop__menu_right {
+  // Position
+
+  // block-model
+  align-items: flex-end;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    min-width: 482px;
+    margin-left: calc(100vw - 482px - 2 * $padding-content-tablet);
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+
+}
+
+.coffee-shop__menu-content {
+  // Position
+
+  // block-model
+  width: 100%;
+  column-gap: 60px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__menu-content_left {
+  // Position
+
+  // block-model
+  // justify-content: flex-start;
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__menu-content_right {
+  // Position
+
+  // block-model
+  justify-content: flex-end;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.coffee-shop__menu-line {
+  // Position
+  position: relative;
+  // block-model
+  display: block;
+  width: 100px;
+  height: 100%;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+  &:before {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    content: "";
+    width: 100%;
+    min-height: 1px;
+    background-color: $color-interactive;
+
+  }
+}
+
+.coffee-shop__menu-price-container {
+  // Position
+
+  // block-model
+  column-gap: 60px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}

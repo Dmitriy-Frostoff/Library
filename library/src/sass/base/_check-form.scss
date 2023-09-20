@@ -1,0 +1,66 @@
+.check-form__container {
+  // Position
+
+  // block-model
+  padding: 20px 20px 30px;
+  row-gap: 20px;
+  // Typography
+
+  // Decoration
+  border: 3px solid $color-interactive;
+  background-color: $color-light;
+  // Animation
+
+  // Various
+
+}
+
+.check-form__form {
+  // Position
+
+  // block-model
+  padding: 20px 20px 25px;
+  row-gap: 20px;
+  // Typography
+
+  // Decoration
+  background-color: $color-interactive;
+  // Animation
+
+  // Various
+  & > :nth-child(2) {
+    padding-bottom: 5px;
+  }
+}
+
+.check-form__title {
+  // Position
+
+  // block-model
+  align-self: center;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.check-form__input {
+  // Position
+
+  // block-model
+  width: 520px;
+  height: 66px;
+  padding-left: 20px;
+  // Typography
+
+  // Decoration
+  background-color: $color-light;
+  border-radius: 10px;
+  // Animation
+
+  // Various
+
+}

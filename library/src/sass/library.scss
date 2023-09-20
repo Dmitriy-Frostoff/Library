@@ -1,0 +1,33 @@
+// normalize
+@import "./base/normalize";
+
+//abstracts
+@import "./abstracts/constants";
+@import "./abstracts/placeholders";
+@import "./abstracts/mixins";
+@import "./abstracts/animations";
+
+//layout
+@import "./layout/content-structure";
+
+//base
+@import "./base/typography";
+@import "./base/common";
+@import "./base/nav";
+@import "./base/pagination";
+@import "./base/favorites-checker";
+@import "./base/book-card";
+@import "./base/buttons";
+@import "./base/check-form";
+@import "./base/social";
+@import "./base/burger-menu";
+
+//components
+@import "./components/header";
+@import "./components/welcome";
+@import "./components/about";
+@import "./components/favorites";
+@import "./components/coffee-shop";
+@import "./components/contacts";
+@import "./components/library-card";
+@import "./components/footer";

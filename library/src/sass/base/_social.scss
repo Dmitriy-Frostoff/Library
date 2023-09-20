@@ -1,0 +1,53 @@
+.social__container {
+  // Position
+
+  // block-model
+  column-gap: 15px;
+  flex-wrap: nowrap;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.social__item {
+  // Position
+
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.social__link {
+  // Position
+
+  // block-model
+  
+  // Typography
+  line-height: 40px;
+  // Decoration
+  
+  // Animation
+
+  // Various
+  & path {
+    fill: $color-social;
+    @extend %transition-basic;
+  }
+
+  &:hover path {
+    fill: $color-interactive;
+    @extend %transition-basic;
+  }
+}

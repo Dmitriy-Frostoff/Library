@@ -1,0 +1,62 @@
+.button {
+  // Position
+
+  // block-model
+  width: 75px;
+  height: 30px;
+  @include flex-one-column ($flex-wrap: nowrap, $align-content: flex-start, $justify-content: center, $align-items: center);
+  padding: 10px 0px;
+  // Typography
+
+  // Decoration
+  border-radius: 2px;
+  border: 1px solid $color-background-dark;
+  @extend %cursor-pointer;
+  background-color: inherit;
+  // Animation
+  @extend %transition-basic;
+  // Various
+  &:hover, &:active {
+    border-color: $color-interactive;
+    background-color: $color-interactive;
+    @extend %cursor-pointer;
+    @extend %transition-basic;
+  }
+
+  &:disabled {
+    color: $color-interactive;
+    border-color: $color-interactive;
+    @extend %pointer-events-disable;
+  }
+}
+
+.library-card__button {
+  // Position
+
+  // block-model
+  width: 242px;
+  height: 44px;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}
+
+.library-card__button_at-center {
+  // Position
+
+  // block-model
+  align-self: center;
+  // Typography
+
+  // Decoration
+  
+  // Animation
+
+  // Various
+
+}

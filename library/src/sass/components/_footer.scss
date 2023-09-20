@@ -1,0 +1,201 @@
+footer {
+  // Position
+
+  // block-model
+  width: 100%;
+  padding: 20px 0 30px;
+
+  // Typography
+
+  // Decoration
+  background-color: $color-background-dark;
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__container {
+  // Position
+
+  // block-model
+  width: 100%;
+  row-gap: 10px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    & > :nth-child(2) {
+      // Position
+  
+      // block-model
+      padding-bottom: 20px;
+      // Typography
+  
+      // Decoration
+  
+      // Animation
+  
+      // Various
+
+    }
+  }
+}
+
+.footer-library__content-container {
+  // Position
+
+  // block-model
+  width: 100%;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__link {
+  // Position
+
+  // block-model
+
+  // Typography
+  line-height: 20px;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__link_left {
+  // Position
+
+  // block-model
+  max-width: 229px;
+  // Typography
+  text-align: left;
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__link_right {
+  // Position
+
+  // block-model
+  max-width: 149px;
+
+  // Typography
+  text-align: right;
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+
+.footer__icon {
+  // Position
+
+  // block-model
+  
+  // Typography
+
+  // Decoration
+  @extend %pointer-events-disable;
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__user-container {
+  // Position
+
+  // block-model
+  width: 100%;
+  padding: 44px 0;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    padding: 24px 0;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
+.footer-library__user-list {
+  // Position
+
+  // block-model
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__user-item {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+
+.footer-library__user-link {
+  // Position
+
+  // block-model
+
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+
+}
+

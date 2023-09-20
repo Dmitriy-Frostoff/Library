@@ -1,0 +1,23 @@
+{
+  "name": "dmitriy-frostoff-jsfepreschool2023q2",
+  "version": "1.0.0",
+  "description": "Library is a stage #0 task in the course of which you will make the landing page of the site for the selection and sale of books, make it adaptive and interactive.",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./library/src/sass/library.scss:./library/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2.git"
+  },
+  "keywords": [
+    "Library",
+    "project"
+  ],
+  "author": "Dmitriy Frostoff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/dmitriy-frostoff-JSFEPRESCHOOL2023Q2#readme"
+}

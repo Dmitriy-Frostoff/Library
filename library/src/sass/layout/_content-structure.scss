@@ -1,0 +1,11 @@
+.layout-one-column {
+  @include flex-one-column();
+}
+
+.layout-two-columns {
+  @include flex-two-columns();
+}
+
+.layout-multiple-columns {
+  @include flex-multiple-columns();
+}

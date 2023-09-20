@@ -1,0 +1,133 @@
+.contacts {
+  // Position
+
+  // block-model
+  width: 100%;
+  padding: 20px 0 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__container {
+  // Position
+
+  // block-model
+  row-gap: 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__info-container {
+  // Position
+
+  // block-model
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 100px;
+  column-gap: 100px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    flex-direction: column;
+    align-content: stretch;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}
+
+.contacts__content-container {
+  // Position
+
+  // block-model
+  row-gap: 40px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.contacts__content-item {
+  // Position
+
+  // block-model
+  row-gap: 20px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  &:first-of-type > :nth-child(1) {
+    padding-bottom: 20px;
+  }
+}
+
+.contacts__link {
+  // Position
+
+  // block-model
+
+  // Typography
+  line-height: 40px;
+  // Decoration
+
+  // Animation
+
+  // Various
+}
+
+.library-location {
+  // Position
+
+  // block-model
+  width: 696px;
+  height: 414px;
+  // Typography
+
+  // Decoration
+
+  // Animation
+
+  // Various
+  @include media-tablet-large {
+    // Position
+
+    // block-model
+    width: calc(696px / $content-width-tablet * 100%);
+    align-self: center;
+    // Typography
+
+    // Decoration
+
+    // Animation
+
+    // Various
+  }
+}

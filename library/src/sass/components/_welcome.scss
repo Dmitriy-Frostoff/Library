@@ -1,0 +1,39 @@
+.welcome {
+  // Position
+
+  // block-model
+  width: 100%;
+  max-width: $width-desktop;
+  min-height: 600px;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 62px;
+  // Typography
+
+  // Decoration
+  background-image: $background-radient, url("./src/assets/background/welcome/welcome__background.jpg");
+  background-position: top, center;
+  background-size: auto, cover;
+  background-repeat: no-repeat, no-repeat;
+  // Animation
+
+  // Various
+}
+
+.welcome__container {
+  // Position
+
+  // block-model
+  width: 600px;
+  min-height: 220px;
+  align-items: center;
+  padding: 35px 40px;
+  // Typography
+  text-align: center;
+  // Decoration
+  background: $color-dark;
+  // Animation
+
+  // Various
+
+}
